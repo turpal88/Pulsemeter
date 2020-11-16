@@ -1,11 +1,8 @@
 .promo{
-    
+    background: url('../img/main-bg.jpg') center (center/cover) no-repeat;
     min-height: 650px;
     padding-top: 27px;
-    .container{
-        max-width: 950px;
-        margin: 0 auto;
-    }
+    
 
         header{
             display: flex;
@@ -15,6 +12,11 @@
                 max-width: 250px;
                 .header__img{
                     width: 100%;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+
                 }    
             }
             .header__text{

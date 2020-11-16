@@ -1,0 +1,133 @@
+@media (max-width: 991px){
+    .container{
+        max-width: 700px;
+    }
+    .title{
+        font-size: 22px;
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+    .promo{
+        .wrapper{
+            align-items: center;
+            .promo__selection{
+                text-align: center;
+                h1{
+                    font-size: 32px;
+                }
+            }
+            .promo__icons{
+                justify-content: center;
+                .promo__icon{
+                    margin-left: 0;
+                }
+            }
+            .promo__consult{
+                text-align: center;
+            }
+        }
+    }
+    .advantages{
+        .advantage__wrapper{
+            .advantage__item{
+                max-width: 170px;
+                .advantage__describe{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width: 767px){
+    .container{
+        max-width: 530px;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    .promo{
+        .header{
+            .header__text{
+                display: none;
+            }
+        }
+        .wrapper{
+            .promo__consult{
+                font-size: 14px;
+                .button_consult{
+                    width: 208px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+    .advantages{
+        .advantage__wrapper{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+            .advantage__item{
+                max-width: 100%;
+                margin-top: 35px;
+                &:nth-child(2){
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                
+                .advantage__subtitle{
+                    margin-top: 23px;
+                }
+                .advantage__describe{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    .container{
+        max-width: 550px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .promo{
+        min-height: 520px;
+        .header{
+            .header__contacts{
+                a{
+                    font-size: 14px;
+                }
+                .button_promo{
+                    width: 110px;
+                    font-size: 10px;
+                }
+            }
+            .header__logo{
+                max-width: 156px;
+            }
+
+        }
+        .wrapper{
+            padding-top: 25px;
+            .promo__selection{
+                h1{
+                    font-size: 22px;
+                }
+                h2{
+                    font-size: 16px;
+                }
+            }
+            .promo__icons{
+                .promo__icon{
+                    font-size: 12px;
+                    img{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+}
