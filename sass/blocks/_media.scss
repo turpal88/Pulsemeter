@@ -1,3 +1,19 @@
+@media (max-width: 1199px){
+    .consultation{
+        .consultation__title,
+        .consultation__subtitle{
+            text-align: center;
+        }
+        .feed-form{
+            margin: 0 auto;
+        }
+    }
+    .carousel{
+        .carousel__inner{
+            width: 500px;
+        }
+    }
+}
 @media (max-width: 991px){
     .container{
         max-width: 700px;
@@ -36,6 +52,11 @@
                     font-size: 13px;
                 }
             }
+        }
+    }
+    .consultation{
+        .consultation__title{
+            font-size: 28px;
         }
     }
     
@@ -85,6 +106,16 @@
             }
         }
     }
+    .consultation{
+        .consultation__title{
+            font-size: 22px;
+        }
+    }
+    .carousel{
+        .carousel__inner{
+            width: 350px;
+        }
+    }
 }
 @media (max-width: 575px){
     .container{
@@ -129,5 +160,51 @@
             }
         }
     }
+    .consultation{
+        .consultation__title{
+            font-size: 18px;
+        }
+        .consultation__subtitle{
+            font-size: 14px;
+        }
+        .feed-form{
+            width: 270px;
+        }
+    }
+    .carousel{
+        padding: 50px 0 50px 0;
+        .carousel__inner{
+            width: 250px;
+            ul.slick-dots{
+                text-align: center;
+                margin-top: 15px;
+                li{
+                    list-style-type: none;
+                    display: inline-block;
+                    width: 60px;
+                    height: 20px;
+                    padding: 0;
+                    cursor: pointer;
+                    button{
+                        font-size: 0;
+                        line-height: 0;
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        padding: 5px;
+                        cursor: pointer;
+                        background-color: #000;
+                        border: 0;
+                        border-radius: 100%;
+                        outline: none;
+                        opacity: .5;
+                        
+                    }
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
 
-}

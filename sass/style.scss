@@ -1,7 +1,4 @@
 @import "blocks/variables";
-@import "blocks/promo";
-@import "blocks/advantages";
-
 *{
     font-family: 'Museo Sans', sans-serif;
 }
@@ -33,4 +30,9 @@
     font-weight: 300;
     color: #000;
 }
+
+@import "blocks/promo";
+@import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/carousel";
 @import "blocks/media";
