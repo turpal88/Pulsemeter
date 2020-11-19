@@ -1,5 +1,5 @@
 .carousel{
-    .carousel__inner{
+    .tns-outer{
         position: relative;
         width: 750px;
         margin: 0 auto;
@@ -10,8 +10,8 @@
             
     }
     padding: 150px 0 170px 0;
-    .slick-prev,
-    .slick-next{
+    .prev,
+    .next{
         width: 36px;
         height: 50px;
         background-color: #fff;
@@ -19,14 +19,16 @@
         outline: none;
         position: absolute;
     }
-    .slick-prev{
+    .prev{
         left: -75px;
         top: 50%;
         transform: translateY(-50%);
     }
-    .slick-next{
+    .next{
         right: -75px;
         bottom: 50%;
         transform: translateY(50%);
     }
+    
+    
 }
