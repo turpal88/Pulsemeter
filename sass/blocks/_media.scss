@@ -116,6 +116,50 @@
             width: 350px;
         }
     }
+    .catalog{
+        &__content{
+            &_active{
+                
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap; 
+            }
+        }
+        &-item{
+            padding: 15px 15px;
+            .subtitle_catalog{
+                margin-top: 0;
+                
+            }
+        }
+        &__footer{
+            .button_catalog{
+                width: 100px;
+                height: 32px;
+            }
+        }
+        &__addition{
+            
+            &_active{
+                
+                padding-left: 15px;
+            }
+        }
+        &__descr{
+            margin-top: 10px;
+        }
+        &__list{
+            .list__item{
+                margin-bottom: 12px;
+            }
+        }
+        &__footer{
+            padding-top: 7px;
+        }
+    }
+    
+
+    
 }
 @media (max-width: 575px){
     .container{
@@ -206,5 +250,58 @@
                 }
             }
         }
+    .catalog{
+        .title_catalog{
+            font-size: 20px;
+        }
+        
     }
+    .catalog-tabs{
+        padding-top: 20px;
+        flex-direction: column;
+        .catalog__tab{
+            height: 34px;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 32px;
+        }
+    }
+    .feedbacks{
+        .title_feedback{
+            font-size: 20px;
+        }
+        &__item{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .item__img{
+                min-width: 120px;
+                max-width: 120px;
+            }
+            &:nth-child(2),
+            &:nth-child(3){
+            margin-top: 50px;
+        }
+        }
+        &__content{
+            margin-top: 30px;
+        }
+        
+    }
+    .feedback{
+        margin: 0 auto;
+        .subtitle_feedback{
+            font-size: 14px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        &__count{
+            text-align: center;
+        }
+        .describing_feedback{
+            
+            font-size: 12px;
+        }
+    }
+}
 
