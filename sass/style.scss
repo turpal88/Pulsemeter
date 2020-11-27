@@ -13,7 +13,10 @@
     border-radius: 5px;
     text-transform: uppercase;
     color: #fff;
-    
+    transition: 0.5s all;
+    &:hover{
+        box-shadow: 3px 3px 15px $main-color;
+    }
 }
 .title{
     font-weight: 700;
@@ -37,4 +40,5 @@
 @import "blocks/carousel";
 @import "blocks/catalog";
 @import "blocks/feedbacks";
+@import "blocks/footer";
 @import "blocks/media";
