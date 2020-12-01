@@ -18,6 +18,23 @@
         height: 240px;
         padding: 20px 40px;
     }
+    .modal{
+        padding: 20px;
+    }
+    .feed-form_modal{
+        align-items: space-between;
+        width: 100%;
+        padding-top: 15px;
+        input{
+            height: 40px;
+            padding: 20px 20px;
+        }
+        .button_left{
+            height: 40px;
+        }
+    }
+
+    
 }
 @media (max-width: 991px){
     .container{
@@ -202,6 +219,25 @@
     .footer__addr{
         font-size: 14px;
     }
+    .modal{
+        width: 300px;
+        &__descr{
+            font-size: 13px;
+        }
+        .button_left{
+            height: 30px;
+            font-size: 14px;
+        }
+    }
+    .subtitle_modal{
+        font-size: 15px;
+    }
+    .feed-form_modal{
+        input{
+            height: 30px;
+            font-size: 14px;
+        }
+    }
     
 }
 @media (max-width: 575px){
@@ -358,5 +394,25 @@
     .footer__addr{
         display: none;
     }
+    .modal{
+        width: 250px;
+        &__close{
+            right: -24px;
+            font-size: 35px;
+        }
+    
+    }
+    .subtitle_modal{
+        font-size: 13px;
+    }
+    .feed-form_modal{
+        input{
+            font-size: 12px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        
+    }
+
 }
 

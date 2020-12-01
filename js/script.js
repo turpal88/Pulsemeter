@@ -38,6 +38,20 @@ function switchClass(item){
 switchClass('.catalog-item__link');
 switchClass('.catalog-item__back');
 
+$('[data-modal=consultation]').on('click', function(){
+    $('.overlay, #consultation').fadeIn();
+});
+$('.modal__close').on('click', function(){
+    $('.overlay, #consultation, #order').fadeOut();
+});
+
+$('.button_catalog').each(function(i){
+    $(this).on('click', function(){
+        $('#order .modal__descr').text($('.subtitle_catalog').eq(i).text());
+        $('.overlay, #order').fadeIn();
+    });
+    
+});
 });
 
 
