@@ -52,6 +52,44 @@ $('.button_catalog').each(function(i){
     });
     
 });
+function formValidate(item){
+    $(item).validate({
+        rules:{
+            name:{
+                required: true,
+                minlength: 2
+                
+            },
+            phone:{
+               required: true
+                    
+            },
+            email:{
+               required: true,
+               email: true 
+            }
+    
+        },
+        messages:{
+            name: {
+                minlength: jQuery.validator.format("Вы должны ввести минимум {0} символа"),
+                required: "Введите ваше имя" 
+            },
+            email:{
+                email: "Ваш email должен быть в формате name@domain.com",
+                required: "Введите ваш email"
+            },
+            phone:{
+                
+                required: "Введите ваш телефон"
+            }
+        }
+    });
+};
+formValidate('.consultation .feed-form');
+formValidate('.modal .feed-form_modal');
+$('input[name=phone]').mask("+7(999) 999-9999");
+
 });
 
 

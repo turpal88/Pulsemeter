@@ -14,7 +14,16 @@
         font-size: 20px;
         margin-top: 80px;
     }
-    
+    .error{
+        color: #fff;
+        font-weight: 300;
+        border: 1px solid $main-color;
+    }
+    #name-error,
+    #phone-error,
+    #email-error{
+        border: none;
+    }
     
 }
 .feed-form{
@@ -37,3 +46,4 @@ input{
 .button_left{
     height: 56px;
 }
+

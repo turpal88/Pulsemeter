@@ -30,6 +30,16 @@
         text-align: center;
         margin-top: 5px;
     }
+    .error{
+        color: #000;
+        font-weight: 300;
+        border: 1px solid $main-color;
+    }
+    #name-error,
+    #phone-error,
+    #email-error{
+        border: none;
+    }
 }
 .subtitle_modal{
     font-size: 18px;
