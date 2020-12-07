@@ -73,21 +73,22 @@ function formValidate(item){
         messages:{
             name: {
                 minlength: jQuery.validator.format("Вы должны ввести минимум {0} символа"),
-                required: "Введите ваше имя" 
+                required: "*" 
             },
             email:{
                 email: "Ваш email должен быть в формате name@domain.com",
-                required: "Введите ваш email"
+                required: "*"
             },
             phone:{
                 
-                required: "Введите ваш телефон"
+                required: "*"
             }
         }
     });
 };
 formValidate('.consultation .feed-form');
-formValidate('.modal .feed-form_modal');
+formValidate('#consultation .feed-form_modal');
+formValidate('#order .feed-form_modal');
 $('input[name=phone]').mask("+7(999) 999-9999");
 $('form').submit(function(e){
     e.preventDefault();
@@ -102,6 +103,18 @@ $('form').submit(function(e){
         $('.overlay, #thanks').fadeIn();
         $('form').trigger('reset');
     });
+    return false;
+});
+$(window).scroll(function(){
+    if($(this).scrollTop()>1600){
+        $('.pageup').fadeIn();
+    }else{
+        $('.pageup').fadeOut();
+    }
+});
+$("a[href^='#']").click(function(){
+    var _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
     return false;
 });
 

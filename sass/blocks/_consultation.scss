@@ -22,15 +22,23 @@
     #name-error,
     #phone-error,
     #email-error{
+        position: absolute;
         border: none;
+        font-size: 24px;
+        left: -16px;
+        color: $main-color;
+    }
+    #name-error{
+        top: 32px;
+    }
+    #phone-error{
+        top: 100px;
+    }
+    #email-error{
+        top: 168px;
     }
     
-}
-.feed-form{
-    display: flex;
-    flex-direction: column;
-    padding-top: 38px;
-    width: 300px;
+    
 }
 input{
     height: 52px;
@@ -39,10 +47,17 @@ input{
     margin-bottom: 15px;
     padding: 23px 20px;
     outline: none;
-    &:nth-child(3){
+    &[name=email]{
         margin-bottom: 20px;
     }
 }
+.feed-form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 38px;
+    width: 300px;
+}
+
 .button_left{
     height: 56px;
 }

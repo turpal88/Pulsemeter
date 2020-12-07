@@ -13,6 +13,18 @@
         .advantage__item{
             max-width: 250px;
             text-align: center;
+            .advantage__img{
+                .heart{
+                    animation-name: heartbeat;
+                    animation-duration: 2s;
+                    animation-timing-function: ease;
+                    animation-iteration-count: infinite;
+                    &:hover{
+                        animation-play-state: paused;
+                    }
+                }
+                
+            }
             &:nth-child(2){
                 margin-left: 100px;
                 margin-right: 100px;

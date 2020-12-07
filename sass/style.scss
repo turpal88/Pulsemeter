@@ -1,5 +1,5 @@
 @import "blocks/variables";
-
+@import "blocks/animations";
 *{
     font-family: 'Museo Sans', sans-serif;
 }
@@ -43,4 +43,5 @@
 @import "blocks/feedbacks";
 @import "blocks/footer";
 @import "blocks/modal";
+@import "blocks/pageup";
 @import "blocks/media";
