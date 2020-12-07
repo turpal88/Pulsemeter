@@ -41,22 +41,11 @@ form{
     #name-error,
     #phone-error,
     #email-error{
-        position: absolute;
         border: none;
-        font-size: 24px;
-        left: -16px;
         color: $main-color;
         
     }
-    #name-error{
-        top: 24px;
-    }
-    #phone-error{
-        top: 92px;
-    }
-    #email-error{
-        top: 160px;
-    }
+    
 }
 .subtitle_modal{
     font-size: 18px;

@@ -22,20 +22,8 @@
     #name-error,
     #phone-error,
     #email-error{
-        position: absolute;
         border: none;
-        font-size: 24px;
-        left: -16px;
-        color: $main-color;
-    }
-    #name-error{
-        top: 32px;
-    }
-    #phone-error{
-        top: 100px;
-    }
-    #email-error{
-        top: 168px;
+        color: #fff;
     }
     
     

@@ -73,15 +73,15 @@ function formValidate(item){
         messages:{
             name: {
                 minlength: jQuery.validator.format("Вы должны ввести минимум {0} символа"),
-                required: "*" 
+                required: "Введите ваше имя" 
             },
             email:{
                 email: "Ваш email должен быть в формате name@domain.com",
-                required: "*"
+                required: "Введите ваш Email"
             },
             phone:{
                 
-                required: "*"
+                required: "Введите ваш телефон"
             }
         }
     });
@@ -114,7 +114,7 @@ $(window).scroll(function(){
 });
 $("a[href^='#']").click(function(){
     var _href = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    $("html, body").animate({scrollTop: $(_href).offset().top},1000);
     return false;
 });
 
