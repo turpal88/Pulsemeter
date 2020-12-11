@@ -15,7 +15,7 @@
         margin-top: 80px;
     }
     .error{
-        color: #fff;
+        
         font-weight: 300;
         border: 1px solid $main-color;
     }
@@ -38,6 +38,7 @@ input{
     &[name=email]{
         margin-bottom: 20px;
     }
+    
 }
 .feed-form{
     display: flex;

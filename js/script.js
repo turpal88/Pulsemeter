@@ -84,25 +84,30 @@ function formValidate(item){
                 required: "Введите ваш телефон"
             }
         }
-    });
-};
+    })
+        
+}
+
 formValidate('.consultation .feed-form');
 formValidate('#consultation .feed-form_modal');
 formValidate('#order .feed-form_modal');
 $('input[name=phone]').mask("+7(999) 999-9999");
 $('form').submit(function(e){
     e.preventDefault();
-    $.ajax({
-        type: "POST",
-        url: "mailer/smart.php",
-        data: $(this).serialize()
-
-    }).done(function(){
-        $(this).find("input").val("");
-        $('#consultation, #order').fadeOut();
-        $('.overlay, #thanks').fadeIn();
-        $('form').trigger('reset');
-    });
+    if($(this).valid()){
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+    
+        }).done(function(){
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn();
+            $('form').trigger('reset');
+        });
+    }
+     
     return false;
 });
 $(window).scroll(function(){
